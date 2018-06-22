@@ -169,7 +169,7 @@ input[type="file"] {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-#img_prev1, #img_prev2, #img_prev3, #img_prev4, #img_prev5{
+#img_prev_one, #img_prev_two, #img_prev_three, #img_prev_four, #img_prev_five{
   height:100%;
   max-width:100%;
   display:none;
@@ -179,8 +179,8 @@ input[type="file"] {
 }
 
 .alert-error {
-    background-color: #f2dede;
-    border-color: #eed3d7;
-    color: #b94a48;
-    text-align: center;
- }
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: center;
+}
