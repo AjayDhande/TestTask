@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CLAIM PHOTO CAPTURE</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application','data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white header-custom">
+      <div class="container">
+        <a class="navbar-brand margin-auto" href="#"><%= image_tag "logo.png", alt: "search"%></a>
+      </div>
+    </nav>
+    <div class="<%= "alert alert-notice container-error" if !flash[:notice].nil? %>"><p><%= flash[:notice] %></p>
+    </div>  
+    <div class="<%= "alert alert-error container-error" if !flash[:error].nil? %>" ><p><%= flash[:error] %></p>
+    </div>
+    <%= yield %>
+  </body>
+</html>
