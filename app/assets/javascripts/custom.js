@@ -5,6 +5,7 @@ function photo_one(input) {
       reader.onload = function (e) {
         $('#img_prev1')
           .attr('src', e.target.result)
+          .addClass('.display')
           .width(252);
       };
 
@@ -18,6 +19,7 @@ function photo_one(input) {
       reader.onload = function (e) {
         $('#img_prev2')
           .attr('src', e.target.result)
+          .addClass('.display')
           .width(252);
       };
 
@@ -31,6 +33,7 @@ function photo_one(input) {
       reader.onload = function (e) {
         $('#img_prev3')
           .attr('src', e.target.result)
+          .addClass('.display')
           .width(252);
       };
 
@@ -44,6 +47,7 @@ function photo_one(input) {
       reader.onload = function (e) {
         $('#img_prev4')
           .attr('src', e.target.result)
+          .addClass('.display')
           .width(252);
       };
 
@@ -57,6 +61,7 @@ function photo_one(input) {
       reader.onload = function (e) {
         $('#img_prev5')
           .attr('src', e.target.result)
+          .addClass('.display')
           .width(252);
       };
       reader.readAsDataURL(input.files[0]);
