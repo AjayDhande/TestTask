@@ -172,6 +172,10 @@ input[type="file"] {
 #img_prev1, #img_prev2, #img_prev3, #img_prev4, #img_prev5{
   height:100%;
   max-width:100%;
+  display:none;
+}
+.display{
+  display:block !important;
 }
 
 .alert-error {
